@@ -1,0 +1,20 @@
+DROP DATABASE IF EXISTS bamazonDB;
+CREATE DATABASE bamazonDB;
+USE bamazonDB;
+
+CREATE TABLE products(
+	item_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(80) NOT NULL,
+    dept_name VARCHAR (80) NOT NULL,
+    price FLOAT NOT NULL,
+    stock INT NOT NULL );
+
+SELECT * FROM products;
+
+CREATE TABLE users(
+	user_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR (12) NOT NULL,
+	`password` VARCHAR (12) NOT NULL,
+	`admin` BOOLEAN NOT NULL);
+    
+SELECT * FROM users;

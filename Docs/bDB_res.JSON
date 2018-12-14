@@ -1,0 +1,107 @@
+[
+    {
+        "item_id": 1,
+        "product_name": "Adjustable Pistol-Grip Tape Dispenser for 2\" Tape",
+        "dept_name": "Office Supplies",
+        "price": 14.99,
+        "stock": 25
+    },
+    {
+        "item_id": 2,
+        "product_name": "Country Farm White Bread",
+        "dept_name": "Groceries",
+        "price": 2.29,
+        "stock": 24
+    },
+    {
+        "item_id": 3,
+        "product_name": "Vlassic Dill Pickles",
+        "dept_name": "Groceries",
+        "price": 3.49,
+        "stock": 44
+    },
+    {
+        "item_id": 4,
+        "product_name": "La Mejora Kidney Beans",
+        "dept_name": "Groceries",
+        "price": 1.69,
+        "stock": 45
+    },
+    {
+        "item_id": 5,
+        "product_name": "Kleenex Tissues",
+        "dept_name": "Paper Products",
+        "price": 2.29,
+        "stock": 150
+    },
+    {
+        "item_id": 6,
+        "product_name": "Bounty Paper Towels",
+        "dept_name": "Paper Products",
+        "price": 2.99,
+        "stock": 150
+    },
+    {
+        "item_id": 7,
+        "product_name": "Scotch Brand Packing Tape",
+        "dept_name": "Office Supplies",
+        "price": 6.99,
+        "stock": 52
+    },
+    {
+        "item_id": 8,
+        "product_name": "Defender Case for iPhone 7/8",
+        "dept_name": "Electronics",
+        "price": 45.99,
+        "stock": 10
+    },
+    {
+        "item_id": 9,
+        "product_name": "Google Pixelbook 512GB ",
+        "dept_name": "Electronics",
+        "price": 1349,
+        "stock": 5
+    },
+    {
+        "item_id": 10,
+        "product_name": "Dell Inspiron 11\"",
+        "dept_name": "Electronics",
+        "price": 129.99,
+        "stock": 10
+    },
+    {
+        "item_id": 11,
+        "product_name": "Samsung 75\" qLED TV",
+        "dept_name": "Electronics",
+        "price": 2999,
+        "stock": 2
+    },
+    {
+        "item_id": 12,
+        "product_name": "Duracell AA Batteries, 20pk",
+        "dept_name": "Electronics",
+        "price": 13.99,
+        "stock": 25
+    },
+    {
+        "item_id": 13,
+        "product_name": "Men's Hooded Sweatshirt",
+        "dept_name": "Clothing",
+        "price": 33.49,
+        "stock": 24
+    },
+    {
+        "item_id": 14,
+        "product_name": "Women's Graphic Tee",
+        "dept_name": "Clothing",
+        "price": 18.99,
+        "stock": 25
+    },
+    {
+        "item_id": 15,
+        "product_name": "Unisex Medical Scrubs",
+        "dept_name": "Clothing",
+        "price": 42.99,
+        "stock": 2
+    }
+]
