@@ -494,7 +494,7 @@ var io = {
             },
             {
                 type: "confirm",
-                message: "Are you sure you want to remove this product?\n\nIMPORTANT: This product and its resective data will be permanently deleted.",
+                message: "Are you sure you want to remove this product?\n\nIMPORTANT: This product and its respective data will be permanently deleted.",
                 name: "approved"
             }]).then((ans) => {
                 if (ans.approved) {
@@ -647,6 +647,7 @@ var toolbox = {
                 }, (err, res) => {
                     if (err) throw err
                     console.log("Product added!")
+                    session.hasViewedProducts = false;
                     io.manager()
                 })
         },
@@ -654,6 +655,7 @@ var toolbox = {
             bdb.query("DELETE FROM products WHERE ?", { item_id: ID }, (err, res) => {
                 if (err) throw err
                 console.log(`Successfully removed product with id ${ID} from listing.`)
+                session.hasViewedProducts = false;
                 io.manager()
             })
         },
@@ -668,6 +670,7 @@ var toolbox = {
             let newVal = {}
             if (type === "Price") {
                 newVal.price = newValue
+                session.hasViewedProducts = false;
             }
             else if (type === "Cost") {
                 newVal.cost = newValue
@@ -768,10 +771,10 @@ var hdl = {
     purchase: function (ID, amt) {
         bdb.query("SELECT stock FROM products WHERE ?", { item_id: ID }, (err, res) => {
             if (err) throw err
-            console.log(res[0].stock)
             if (res[0].stock >= amt) {
                 let newStock = res[0].stock - amt
                 // console.log(newStock)
+                console.log("Purchasing product...")
                 bdb.query("UPDATE products SET ? where ?", [{ stock: newStock }, { item_id: ID }], (err, res) => {
                     if (err) throw err
                     console.log("Success!")
