@@ -2,12 +2,7 @@
 const inquirer = require('inquirer')
 const mysql = require('mysql')
 const Table = require('cli-table')
-const readline = require('readline')
 
-var rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
 // Initialization function to connect database
 var bdb = mysql.createConnection({
     host: '{ your hostname }',
@@ -682,7 +677,6 @@ var toolbox = {
             })
         }
     },
-    //TODO: View users, remove user, review admin reqs
     user: {
         remove: function (ID) {
             bdb.query("DELETE FROM users WHERE ?", { user_id: ID }, (err, res) => {
