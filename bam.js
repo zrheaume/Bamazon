@@ -10,10 +10,10 @@ var rl = readline.createInterface({
 })
 // Initialization function to connect database
 var bdb = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'StillGonnaSendIt',
-    database: 'bamazonDB'
+    host: '{ your hostname }',
+    user: '{ your username }',
+    password: '{ your password }',
+    database: '{ your database name }'
 });
 
 bdb.connect((err) => {
